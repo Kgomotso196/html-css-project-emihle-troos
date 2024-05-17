@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navBar">
+    <div class="closeBtn">
+      <button class="btnX" type="button">&times</button>
+    </div>
+    <nav>
+      <div class="flex-container">
+        <a><img src="assets/MyLogo.svg" alt="logo" class="logo" /></a>
+        <ul class="navInfo">
+          <li><a href="#landpageSection">Portfolio</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <img src="assets/Union.svg" alt="menu burger" class="menuIcon" />
+      </div>
+    </nav>
+  </header>
+
+  <ul class="navInfoMobile">
+    <li class="mobileLinks"><a href="#landpageSection">Portfolio</a></li>
+    <li class="mobileLinks"><a href="#aboutMe">About</a></li>
+    <li class="mobileLinks"><a href="#contact">Contact</a></li>
+  </ul>
+  <ul class="hamburger" id="hamButton">
+    <li class="stroke"></li>
+    <li class="stroke"></li>
+    <li class="stroke"></li>
+  </ul>
+  <img src="assets/Icon - Cancel.svg" alt="cancel Icon" class="cancelIcon" />
+
+  <section id="landpageSection">
+    <div class="mainParagraph">
+      <h1 class="welcomeText">
+        Hey There.
+        <br>
+        I’m Troos.
+      </h1>
+      <h3 class="supportingText">I'm a software developer</h3>
+      <p class="description">
+        I can help you build a product, feature or website. Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+      </p>
+    </div>
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="https://github.com/Kgomotso196" target="_blank">
+            <img src="assets/social-media/github.svg" alt="github logo" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kgomotso-nacane/" target="_blank">
+            <img src="assets/social-media/linkedin.svg" alt="linkedin logo" /></a>
+        </li>
+        <li>
+          <a href="https://wellfound.com/u/kgomotso-nacane">
+            <img src="assets/social-media/angiel.svg" alt="angelist logo" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/t_r_o_o_s">
+            <img src="assets/social-media/twitter.svg" alt="twitter logo" /></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@kgomotsonacane">
+            <img src="assets/social-media/medium.svg" alt="medium logo" /></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="aboutMe">
+    <div class="aboutMeDiv">
+      <div class="mainParagraph">
+        <h2 class="aboutMeText">About me</h2>
+        <p class="aboutMeDescription">
+          I have always been a natural problem solver, drawing from my passion for mathematics during my tertiary education.
+          Consistently achieving above 80% in mathematics coursework, I discovered my love for problem-solving.
+          This proficiency has been a driving force in my approach to software development.
+          My academic success demonstrates my ability to work smart and overcome challenges.
+          I have applied this mindset to various remote development projects, from crafting landing pages to leveraging APIs.
+          Operating across three different time zones (UTC-6, UTC+1, UTC+5), I have developed strong skills in remote and asynchronous collaboration.
+          This unique combination of problem-solving aptitude and adaptability sets me apart in the field of software development.
+        </p>
+        </p>
+        <a href="./assets/MyResume.pdf" target="_blank"> <button class="btn getResumeBtn"
+            type="button">Get my resume</button></a>
+      </div>
+    </div>
+
+    <div class="skillsContainer">
+      <ul class="skillsList">
+        <li class="skillsContent">
+          <img src="assets/Rectangle 55.svg" alt="shape" />
+          <span>Language</span>
+          <ul class="innerSkills">
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </li>
+        <li class="skillsContent">
+          <img src="assets/Rectangle 56.svg" alt="shape" />
+          <span>FrameWorks</span>
+          <ul class="innerSkills">
+            <li>React.js</li>
+            <li>Ruby on Rails</li>
+            <li>RSpec</li>
+            <li>Capybara</li>
+          </ul>
+        </li>
+        <li class="skillsContent">
+          <img src="assets/Rectangle 57.svg" alt="shape" />
+          <span>Skills</span>
+          <ul class="innerSkills">
+            <li>Database Management</li>
+            <li>Version Control</li>
+            <li>CLI</li>
+            <li>API Design</li>
+            <li>Web Development</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <section class="formContainer" id="contact">
+      <h2 class="contactFormText">
+        I'm always <br />
+        interested in hearing about new projects, so if you'd like to chat
+        please get in touch.
+      </h2>
+      <form action="https://formspree.io/f/xnqyrbln" method="post" class="contactForm" id="contact-form">
+
+        <label for="full-name">
+          <input type="text" id="full-name" placeholder="Full name" maxlength="30" aria-label="Full name" name="name" required />
+        </label>
+
+        <label for="email">
+          <input type="email" id="email" placeholder="Email address" aria-label="Email address" name="email" required />
+        </label>
+
+        <label for="text-area-msg">
+          <textarea name="message" id="text-area-msg" maxlength="500" placeholder="Write me something..." col="30"
+            rows="10" required></textarea>
+        </label>
+
+        <div class="buttonContainer">
+          <span class="error"></span>
+          <button type="submit" class="btn getResumeBtn" id="getInTouch">Get in touch </button>
+        </div>
+
+      </form>
+    </section>
+    <div class="social-media-footer social-media">
+      <ul>
+        <li>
+          <a href="https://github.com/Kgomotso196
+          " target="_blank"><img src="assets/social-media-dark/githubDark.svg" alt="github logo" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kgomotso-nacane/
+" target="_blank"><img src="assets/social-media-dark/LinkedinDark.svg" alt="linkedin logo" /></a>
+        </li>
+        <li>
+          <a href="https://wellfound.com/u/kgomotso-nacane"><img src="assets/social-media-dark/angelDark.svg" alt="angelist logo" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/t_r_o_o_s"><img src="assets/social-media-dark/twitterDark.svg" alt="twitter logo" /></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@kgomotsonacane"><img src="assets/social-media-dark/mediumDark.svg" alt="medium logo" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <div class="overlay hidden"></div>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/dynamic.js"></script>
+</body>
+
+</html>
