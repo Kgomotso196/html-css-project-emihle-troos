@@ -10,19 +10,35 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="navBar">
-        <nav>
-          <div class="flex-container">
-            <a href="#"><img src="assets/MyLogo.svg" alt="logo" class="logo" /></a>
-            <ul class="navInfo">
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-              <li><a href="#">Projects</a></li>
-            </ul>
-            <img src="assets/Union.svg" alt="menu burger" class="menuIcon" />
-          </div>
+    <header>
+      <section class="hamItems">
+        <div class="closeBtn">
+          <button class="btnX" type="button">&times</button>
+        </div>
+        <nav class="items">
+          <ul class="subItems">
+            <li class="subItem"><a href="index.html">Portfolio</a></li>
+            <li class="subItem"><a href="index.html#about">About</a></li>
+            <li class="subItem"><a href="index.html#contact">Contact</a></li>
+            <li class="subItem"><a href="#">Projects</a></li>
+          </ul>
         </nav>
+      </section>
+  
+      <nav class="mobNav">
+        <a href="#" class="firstTitle"></a>
+        <ul class="navLinks">
+          <li class="navLinksEffect"><a href="index.html">Portfolio</a></li>
+          <li class="navLinksEffect"><a href="index.html#about">About</a></li>
+          <li class="navLinksEffect"><a href="index.html#contact">Contact</a></li>
+          <li class="navLinksEffect"><a href="#">Projects</a></li>
+        </ul>
+        <ul class="hamburger" id="hamButton">
+          <li class="stroke"></li>
+          <li class="stroke"></li>
+          <li class="stroke"></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="worksSection" id="about">
@@ -36,5 +52,7 @@
     
         </div>
     </section>
+    <script src="js/script.js"></script>
+    <script src="js/dynamic.js"></script>
 </body>
 </html>

@@ -40,13 +40,46 @@ body {
   justify-content: space-between;
 }
 
+.mobNav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #382a2a;
+  position: fixed;
+}
+
+.items {
+  height: 0;
+}
+
+.firstTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #28352f;
+  margin-left: 20px;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
   gap: 3px;
   padding-right: 32px;
   cursor: pointer;
-  z-index: 2;
+}
+
+.subItems {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  margin-top: 400px;
+  margin-left: 28px;
+  color: #3a4a42;
 }
 
 /* second section */
@@ -168,6 +201,28 @@ body {
   padding-bottom: 5px;
 }
 
+.btnX {
+  font-size: 40px;
+  color: #67798e;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px){
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamItems {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 375px) {
   /* first section */
 
@@ -180,14 +235,6 @@ body {
   .closeBtn {
     display: flex;
     justify-content: flex-end;
-  }
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    padding-right: 32px;
-    cursor: pointer;
-    z-index: 2;
   }
   
   nav {
@@ -775,9 +822,36 @@ body {
 /* Descktop version */
 
 @media screen and (max-width: 1920px) and (min-width: 768px) {
-  .hamburger {
+  .hamburger,
+  .firstTitle {
     display: none;
   }
+
+  .mobNav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navLinks {
+    display: flex;
+  }
+
+  .navLinksEffect a {
+    padding: 10px 12px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .navLinksEffect:hover {
+    transform: scale(1.3);
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -793,14 +867,6 @@ body {
   fill: white;
   width: 150px !important;
   height: 150px !important;
-}
-
-.stroke {
-  width: 20px;
-  height: 3px;
-  background-color: white;
-  border-radius: 8px;
-  list-style-type: none;
 }
 
 .navInfo {
@@ -1313,4 +1379,12 @@ body {
   .hidden {
     display: none;
   }
+}
+
+.stroke {
+  width: 20px;
+  height: 3px;
+  background-color: #28352f;
+  border-radius: 8px;
+  list-style-type: none;
 }
